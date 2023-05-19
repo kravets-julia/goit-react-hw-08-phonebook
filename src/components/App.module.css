@@ -1,0 +1,23 @@
+.box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+.box__form {
+    border: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+.title__contacts {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
