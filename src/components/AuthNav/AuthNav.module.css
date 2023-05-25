@@ -1,0 +1,17 @@
+.NavLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.NavLink:active {
+    color: rgba(43, 153, 126);
+}
+
+.NavBox {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 30px;
+}

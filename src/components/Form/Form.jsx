@@ -1,16 +1,14 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
-import { nanoid } from '@reduxjs/toolkit';
-import { addContactsThunk } from 'redux/thunks';
-import { getContacts } from 'redux/selectors';
+import React, { useState } from 'react';
 import css from '../../components/Form/Form.module.css';
+import { getAllContacts } from 'redux/contactsSelector';
+import { fetchAddContact } from 'redux/thunk';
 
 export function Form() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
-  const contacts = useSelector(getContacts);
-  // console.log(contacts);
+  const contacts = useSelector(getAllContacts);
   const dispatch = useDispatch();
 
   const data = {
@@ -44,18 +42,10 @@ export function Form() {
   const formSubmitHandler = ({ name, number }) => {
     if (!findName(name)) {
       const newContact = {
-        id: nanoid(),
         name,
-        phone: number,
+        number,
       };
-      dispatch(addContactsThunk(newContact));
-      // dispatch(
-      //   addContact({
-      //     id: nanoid(),
-      //     name,
-      //     number,
-      //   })
-      // );
+      dispatch(fetchAddContact(newContact));
     } else {
       alert(`${name} is alredy in contacts`);
     }

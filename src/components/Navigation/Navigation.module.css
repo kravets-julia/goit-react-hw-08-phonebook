@@ -1,0 +1,17 @@
+.NavLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.NavLink:active {
+    color: blue;
+}
+
+.HeaderNav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 30px;
+}

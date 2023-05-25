@@ -1,0 +1,48 @@
+.RegisterForm {
+    margin-top: 25px;
+    width: 60%;
+    max-width: 500px;
+    padding: 10px 15px 15px 15px;
+    border: 1.5px solid black;
+    border-radius: 4px;
+}
+
+.FormItem {
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.FormLabel {
+    font-size: 26px;
+}
+
+.FormInput {
+    width: 40%;
+    border: 1px solid lightgray;
+    padding: 7px 5px 3px 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.FormButton {
+    margin-top: 25px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.FormButton:hover,
+.FormButton:focus {
+    background: blue;
+    color: white;
+}

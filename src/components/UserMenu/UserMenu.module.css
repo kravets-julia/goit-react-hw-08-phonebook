@@ -1,0 +1,34 @@
+.UserContainer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+.UserText {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.UserName {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.LogoutBtn {
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.LogoutBtn:hover,
+.LogoutBtn:focus {
+    background: blue;
+    color: white;
+}
