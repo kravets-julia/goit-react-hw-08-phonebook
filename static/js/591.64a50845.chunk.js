@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[591],{591:function(e,t,a){a.r(t),a.d(t,{default:function(){return r}});var n="HomePage_HomeText__5UNNi",o="HomePage_HomeContainer__-diky",c=a(184);function r(){return(0,c.jsx)("div",{className:o,children:(0,c.jsx)("p",{className:n,children:"This application allows you to add, delete, and search for contacts by name. To access the functionality, register or sign in with your account."})})}}}]);
+//# sourceMappingURL=591.64a50845.chunk.js.map
